@@ -79,7 +79,7 @@ O contador de mensagens deve subir quando o storefront publica, e zerar quando o
 
 ![Contador mensagem](/assets/Contador%20de%20Mensagens.png)  
 
-No H2:  
+ H2:  
          SELECT * FROM ESTOQUE WHERE PRODUTO_ID IN (6,7);  
 o	As quantidades diminuíram de acordo com o pedido.  
 

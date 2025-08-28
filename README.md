@@ -68,7 +68,7 @@ GET /estoques/produto/7
 
 ## Assíncrono
 
-1- Teste Assíncrono com DTO:  
+# 1- Teste Assíncrono com DTO:  
 Objetivo: Validar o fluxo de comunicação assíncrona entre storefront e warehouse via RabbitMQ, processando um PedidoDTO e alterando o estoque no H2.  
 
 ![Criando e enviando pedido](/assets/Teste%20Assíncrono%20criação%20pedido%202x.png)  
@@ -86,7 +86,7 @@ o	As quantidades diminuíram de acordo com o pedido.
 ![Estoque antes](/assets/Estoque%20do%20warehouse%20quantidades.png)  
 ![Estoque depois](/assets/h2%20Estoque%20warehouse%202.png)  
 
-2- Teste de Estoque Insuficiente  
+# 2- Teste de Estoque Insuficiente  
 Objetivo: Garantir que o sistema não gere estoque negativo e alerte quando a quantidade solicitada for maior que a disponível.  
 Cenário  
 •	Produto 6 → tem 3, vai pedir 1 → baixa para 2   

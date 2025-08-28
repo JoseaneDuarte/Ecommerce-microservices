@@ -1,0 +1,48 @@
+plugins {
+    // Plugin Java padrão
+    id 'java'
+
+    // Plugin do Spring Boot (versão 3.5.5)
+    id 'org.springframework.boot' version '3.5.5'
+
+    // Gerenciador de dependências do Spring
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+// Informações do projeto
+group = 'com.ecommerce'                        // Pacote base do projeto
+version = '0.0.1-SNAPSHOT'                     // Versão inicial
+description = 'Microsserviço de Sistema de Armazém' // Descrição do módulo
+
+// Configuração da versão do Java
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(23) 
+    }
+}
+
+// Repositório de dependências
+repositories {
+    mavenCentral() // Fonte principal de bibliotecas
+}
+
+// Dependências do projeto
+dependencies {
+    //  Spring Boot Starters (funcionalidades principais)
+    implementation 'org.springframework.boot:spring-boot-starter-web'       // Para criar APIs REST
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'  // Para persistência com JPA
+    implementation 'org.springframework.boot:spring-boot-starter-amqp'      // Para integração com RabbitMQ
+
+    //  Banco de dados H2 (em memória)
+    runtimeOnly 'com.h2database:h2' // Só é carregado em tempo de execução
+
+    //  Dependências de teste
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'     // Testes unitários e de integração
+    testImplementation 'org.springframework.amqp:spring-rabbit-test'           // Testes com RabbitMQ
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'               // Lançador de testes JUnit 5
+}
+
+// Configuração da tarefa de teste
+tasks.named('test') {
+    useJUnitPlatform() // Usa JUnit 5 como plataforma de testes
+}

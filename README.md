@@ -1,4 +1,5 @@
-E Commerce — Microsserviços com Spring Boot e RabbitMQ
+# E-Commerce — Microsserviços com Spring Boot e RabbitMQ
+
 📌 Sobre o Projeto:
 Este projeto implementa uma arquitetura de microsserviços em Java com Spring Boot, simulando um e commerce com dois serviços principais:
 •	storefront (vitrine) — onde o cliente faz pedidos
@@ -31,7 +32,7 @@ bash
 cd storefront
 mvn spring-boot:run
 
-📌Imagens dos Testes Realizados: Síncrono e Assíncrono
+# 📌Imagens dos Testes Realizados: Síncrono e Assíncrono
 
 # Síncrono
 1- Tests Consulta HTTP direto ao Warehouse — Produto específico

@@ -4,11 +4,11 @@
 
 Este projeto implementa uma arquitetura de microsserviços em Java com Spring Boot, simulando um e commerce com dois serviços principais:
 •	storefront (vitrine) — onde o cliente faz pedidos
-•	warehouse (armazém) — que gerencia o estoque
-A comunicação entre eles ocorre de forma:
+•	warehouse (armazém) — que gerencia o estoque  
+A comunicação entre eles ocorre de forma:  
 •	Síncrona — via HTTP
-•	Assíncrona — via RabbitMQ
-Este repositório é a minha versão aperfeiçoada do projeto proposto no desafio da DIO, com ajustes, correções e regras adicionais implementadas.
+•	Assíncrona — via RabbitMQ  
+Este repositório é a minha versão aperfeiçoada do projeto proposto no desafio da DIO, com ajustes, correções e regras adicionais implementadas.  
 🛠 Tecnologias Utilizadas
 •	Java 23
 •	Spring Boot

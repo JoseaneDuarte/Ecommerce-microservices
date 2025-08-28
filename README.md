@@ -1,6 +1,7 @@
 # E-Commerce — Microsserviços com Spring Boot e RabbitMQ
 
-📌 Sobre o Projeto:
+## 📌 Sobre o Projeto:
+
 Este projeto implementa uma arquitetura de microsserviços em Java com Spring Boot, simulando um e commerce com dois serviços principais:
 •	storefront (vitrine) — onde o cliente faz pedidos
 •	warehouse (armazém) — que gerencia o estoque
@@ -34,7 +35,7 @@ mvn spring-boot:run
 
 # 📌Imagens dos Testes Realizados: Síncrono e Assíncrono
 
-# Síncrono
+## Síncrono
 1- Tests Consulta HTTP direto ao Warehouse — Produto específico
 Objetivo: verificar se o serviço responde corretamente à consulta de estoque de um produto individual.
 Passos realizados:
@@ -65,7 +66,7 @@ GET /estoques/produto/7
 ![Estoque item 7](/assets/Exibido%20estoque%20de%20produto%20id%207.png)
 
 
-# Assíncrono
+## Assíncrono
 
 1- Teste Assíncrono com DTO:
 Objetivo: Validar o fluxo de comunicação assíncrona entre storefront e warehouse via RabbitMQ, processando um PedidoDTO e alterando o estoque no H2.
